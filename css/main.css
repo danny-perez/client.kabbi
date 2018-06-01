@@ -15554,3 +15554,9 @@ be a descendant of the grid when it is being dragged.
 .user .user-settings label {
   color: #666;
 }
+
+       #map {
+        height: 500px;
+        width: 100%;
+        background-color: grey;
+       }

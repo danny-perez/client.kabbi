@@ -25,8 +25,10 @@ $ys = $_REQUEST['ys'];
 $xe = $_REQUEST['xe'];
 $ye = $_REQUEST['ye'];
 $alter = $_REQUEST['alter'];
-$str_uri = "https://maps.googleapis.com/maps/api/directions/json?origin=$xs,$ys&destination=$xe,$ye&alternatives=$alter&departure_time=now&key=AIzaSyBe23DtCnNlwWxEvl1K1Z_DF8DL2jy48Pg";
+$str_uri = "https://maps.googleapis.com/maps/api/directions/json?origin=$xs,$ys&destination=$xe,$ye&alternatives=$alter&traffic_model=optimistic&departure_time=now&key=AIzaSyBe23DtCnNlwWxEvl1K1Z_DF8DL2jy48Pg";
+$str_uri2 = "https://maps.googleapis.com/maps/api/directions/json?origin=$xs,$ys&destination=$xe,$ye&alternatives=$alter&departure_time=now&key=AIzaSyBgVIObHG9w4w-ZsGeA2aHsiCheZRVA7m4";
 //$str_uri = "https://maps.googleapis.com/maps/api/directions/json?origin=$xs,$ys&destination=$xe,$ye&alternatives=$alter&departure_time=1519927252&key=AIzaSyBe23DtCnNlwWxEvl1K1Z_DF8DL2jy48Pg";
 $result = curl_get($str_uri);
+$result2 = curl_get($str_uri2);
 echo $result;
 ?>
